@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="./script.js" defer></script>
+    <style></style>
+  </head>
+  <body>
+    <main class="card-section">
+      <section class="card rating-card">
+        <span class="rating-icon" aria-hidden="true">
+          <img src="./images/icon-star.svg" alt="star icon" />
+        </span>
+        <h1 class="rating-heading">How did we do?</h1>
+        <p class="rating-paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form class="rating-form">
+          <ul class="rating-options-list" aria-label="Rate your experience">
+            <li>
+              <button class="rating-option" type="button" aria-label="1 star">
+                1
+              </button>
+            </li>
+            <li>
+              <button class="rating-option" type="button" aria-label="2 star">
+                2
+              </button>
+            </li>
+            <li>
+              <button class="rating-option" type="button" aria-label="3 star">
+                3
+              </button>
+            </li>
+            <li>
+              <button class="rating-option" type="button" aria-label="4 star">
+                4
+              </button>
+            </li>
+            <li>
+              <button class="rating-option" type="button" aria-label="5 star">
+                5
+              </button>
+            </li>
+          </ul>
+          <button class="rating-submit" type="submit">submit</button>
+        </form>
+      </section>
+      <section class="card thanks-card">
+        <img
+          class="thanks-image"
+          src="./images/illustration-thank-you.svg"
+          alt=""
+        />
+        <span class="thanks-span" id="your-rating"
+          >You selected 0 out of 5</span
+        >
+        <h1 class="thanks-heading">Thank you!</h1>
+        <p class="thanks-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/SortJakke">Sortjakke</a>.
+    </footer>
+  </body>
+</html>
